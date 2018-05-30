@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LegalModelStoreContainer" CdmEntityContainer="LegalEntities">
+    <EntitySetMapping Name="LegalReferredInOutCustomers">
+      <EntityTypeMapping TypeName="LegalModel.LegalReferredInOutCustomer">
+        <MappingFragment StoreEntitySet="ReferredInOutCustomers">
+          <ScalarProperty Name="ReferredInOutId" ColumnName="ReferredInOutId" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="ReferralId" ColumnName="ReferralId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="InOut" ColumnName="InOut" />
+          <ScalarProperty Name="SecondCustomerId" ColumnName="SecondCustomerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LegalCustomerHistories">
+      <EntityTypeMapping TypeName="LegalModel.LegalCustomerHistory">
+        <MappingFragment StoreEntitySet="customerHistory">
+          <ScalarProperty Name="PlanningAheadTypeId" ColumnName="PlanningAheadTypeId" />
+          <ScalarProperty Name="important" ColumnName="important" />
+          <ScalarProperty Name="logtime" ColumnName="logtime" />
+          <ScalarProperty Name="loggedBy" ColumnName="loggedBy" />
+          <ScalarProperty Name="logLevel" ColumnName="logLevel" />
+          <ScalarProperty Name="logText" ColumnName="logText" />
+          <ScalarProperty Name="customerID" ColumnName="customerID" />
+          <ScalarProperty Name="logID" ColumnName="logID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

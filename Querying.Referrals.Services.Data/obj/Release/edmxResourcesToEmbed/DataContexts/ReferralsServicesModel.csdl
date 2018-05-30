@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ReferralsServiceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Referral">
+    <Key>
+      <PropertyRef Name="ReferralId" />
+    </Key>
+    <Property Name="ReferralId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="SourceCompanyId" Type="Int32" />
+    <Property Name="CustomerId" Type="Int32" />
+    <Property Name="CustomerForeName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CustomerSurName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CustomerDob" Type="DateTime" Precision="3" />
+    <Property Name="CustomerAddress" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerCity" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerStateProvince" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerPostalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerCountryId" Type="Int32" />
+    <Property Name="CustomerEmail" Type="String" MaxLength="254" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerTelephoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerMobileNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SecondCustomerId" Type="Int32" />
+    <Property Name="SecondCustomerForeName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="SecondCustomerSurName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="SecondCustomerDob" Type="DateTime" Precision="3" />
+    <Property Name="SecondCustomerAddress" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="SecondCustomerCity" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SecondCustomerStateProvince" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SecondCustomerPostalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SecondCustomerCountryId" Type="Int32" />
+    <Property Name="SecondCustomerEmail" Type="String" MaxLength="254" FixedLength="false" Unicode="true" />
+    <Property Name="SecondCustomerTelephoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SecondCustomerMobileNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProductEventId" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="ReferralsServiceEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Referrals" EntityType="Self.Referral" />
+  </EntityContainer>
+</Schema>

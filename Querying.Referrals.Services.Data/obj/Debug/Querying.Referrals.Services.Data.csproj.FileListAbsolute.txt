@@ -1,0 +1,12 @@
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Data\bin\Debug\Querying.Referrals.Services.Data.dll.config
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Data\bin\Debug\Querying.Referrals.Services.Data.dll
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Data\bin\Debug\Querying.Referrals.Services.Data.pdb
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Data\bin\Debug\EntityFramework.dll
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Data\bin\Debug\EntityFramework.xml
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Data\obj\Debug\Querying.Referrals.Services.Data.csproj.CoreCompileInputs.cache
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Data\obj\Debug\Querying.Referrals.Services.Data.csproj.CopyComplete
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Data\obj\Debug\Querying.Referrals.Services.Data.dll
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Data\obj\Debug\Querying.Referrals.Services.Data.pdb
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Data\obj\Debug\Querying.Referrals.Services.Data.csprojResolveAssemblyReference.cache

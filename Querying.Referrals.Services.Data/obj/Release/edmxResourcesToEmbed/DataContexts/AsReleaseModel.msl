@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AsReleaseModelStoreContainer" CdmEntityContainer="AsReleaseEntities">
+    <EntitySetMapping Name="AsCustomerHistories">
+      <EntityTypeMapping TypeName="AsReleaseModel.AsCustomerHistory">
+        <MappingFragment StoreEntitySet="customerHistory">
+          <ScalarProperty Name="customerID" ColumnName="customerID" />
+          <ScalarProperty Name="logText" ColumnName="logText" />
+          <ScalarProperty Name="logLevel" ColumnName="logLevel" />
+          <ScalarProperty Name="logID" ColumnName="logID" />
+          <ScalarProperty Name="loggedBy" ColumnName="loggedBy" />
+          <ScalarProperty Name="logtime" ColumnName="logtime" />
+          <ScalarProperty Name="important" ColumnName="important" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

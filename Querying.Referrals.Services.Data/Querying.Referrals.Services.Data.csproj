@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CBADB464-9A2A-468A-B6DA-DA43B7467CF0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Querying.Referrals.Services.Data</RootNamespace>
+    <AssemblyName>Querying.Referrals.Services.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataContexts\AsCustomerHistory.cs">
+      <DependentUpon>AsReleaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\AsReleaseModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AsReleaseModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\AsReleaseModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AsReleaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\AsReleaseModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AsReleaseModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\AsReleaseExtensions.cs" />
+    <Compile Include="DataContexts\LegalCustomerHistory.cs">
+      <DependentUpon>LegalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\LegalExtensions.cs" />
+    <Compile Include="DataContexts\LegalModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LegalModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\LegalModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LegalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\LegalModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LegalModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\LegalReferredInOutCustomer.cs">
+      <DependentUpon>LegalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\Referral.cs">
+      <DependentUpon>ReferralsServicesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\ReferralsServicesExtensions.cs" />
+    <Compile Include="DataContexts\ReferralsServicesModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReferralsServicesModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\ReferralsServicesModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReferralsServicesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\ReferralsServicesModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReferralsServicesModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="DataContexts\LegalModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LegalModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="DataContexts\AsReleaseModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AsReleaseModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DataContexts\AsReleaseModel.edmx.diagram">
+      <DependentUpon>AsReleaseModel.edmx</DependentUpon>
+    </None>
+    <None Include="DataContexts\LegalModel.edmx.diagram">
+      <DependentUpon>LegalModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="DataContexts\ReferralsServicesModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ReferralsServicesModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DataContexts\ReferralsServicesModel.edmx.diagram">
+      <DependentUpon>ReferralsServicesModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataContexts\AsReleaseModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AsReleaseModel.edmx</DependentUpon>
+      <LastGenOutput>AsReleaseModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataContexts\AsReleaseModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AsReleaseModel.edmx</DependentUpon>
+      <LastGenOutput>AsReleaseModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataContexts\LegalModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LegalModel.Context.cs</LastGenOutput>
+      <DependentUpon>LegalModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="DataContexts\LegalModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LegalModel.edmx</DependentUpon>
+      <LastGenOutput>LegalModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataContexts\ReferralsServicesModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ReferralsServicesModel.edmx</DependentUpon>
+      <LastGenOutput>ReferralsServicesModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataContexts\ReferralsServicesModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ReferralsServicesModel.edmx</DependentUpon>
+      <LastGenOutput>ReferralsServicesModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

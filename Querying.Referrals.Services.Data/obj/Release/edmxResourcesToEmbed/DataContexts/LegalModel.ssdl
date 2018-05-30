@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LegalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="customerHistory">
+    <Key>
+      <PropertyRef Name="logID" />
+    </Key>
+    <Property Name="logID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="customerID" Type="int" Nullable="false" />
+    <Property Name="logText" Type="text" />
+    <Property Name="logLevel" Type="int" />
+    <Property Name="loggedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="logtime" Type="datetime" Nullable="false" />
+    <Property Name="important" Type="bit" Nullable="false" />
+    <Property Name="PlanningAheadTypeId" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="ReferredInOutCustomers">
+    <Key>
+      <PropertyRef Name="ReferredInOutId" />
+    </Key>
+    <Property Name="ReferredInOutId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+    <Property Name="ReferralId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="InOut" Type="bit" Nullable="false" />
+    <Property Name="SecondCustomerId" Type="int" />
+  </EntityType>
+  <EntityContainer Name="LegalModelStoreContainer">
+    <EntitySet Name="customerHistory" EntityType="Self.customerHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ReferredInOutCustomers" EntityType="Self.ReferredInOutCustomers" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

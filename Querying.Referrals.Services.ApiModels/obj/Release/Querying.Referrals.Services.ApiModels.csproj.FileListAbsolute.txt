@@ -1,0 +1,8 @@
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.ApiModels\bin\Release\Querying.Referrals.Services.ApiModels.dll
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.ApiModels\bin\Release\Querying.Referrals.Services.ApiModels.pdb
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.ApiModels\bin\Release\System.ComponentModel.Annotations.dll
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.ApiModels\obj\Release\Querying.Referrals.Services.ApiModels.csprojResolveAssemblyReference.cache
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.ApiModels\obj\Release\Querying.Referrals.Services.ApiModels.csproj.CoreCompileInputs.cache
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.ApiModels\obj\Release\Querying.Referrals.Services.ApiModels.csproj.CopyComplete
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.ApiModels\obj\Release\Querying.Referrals.Services.ApiModels.dll
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.ApiModels\obj\Release\Querying.Referrals.Services.ApiModels.pdb

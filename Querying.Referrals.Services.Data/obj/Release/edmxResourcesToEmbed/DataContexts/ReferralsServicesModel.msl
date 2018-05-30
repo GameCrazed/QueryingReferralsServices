@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReferralsServiceModelStoreContainer" CdmEntityContainer="ReferralsServiceEntities">
+    <EntitySetMapping Name="Referrals">
+      <EntityTypeMapping TypeName="ReferralsServiceModel.Referral">
+        <MappingFragment StoreEntitySet="Referrals">
+          <ScalarProperty Name="ReferralId" ColumnName="ReferralId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="SourceCompanyId" ColumnName="SourceCompanyId" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerForeName" ColumnName="CustomerForeName" />
+          <ScalarProperty Name="CustomerSurName" ColumnName="CustomerSurName" />
+          <ScalarProperty Name="CustomerDob" ColumnName="CustomerDob" />
+          <ScalarProperty Name="CustomerAddress" ColumnName="CustomerAddress" />
+          <ScalarProperty Name="CustomerCity" ColumnName="CustomerCity" />
+          <ScalarProperty Name="CustomerStateProvince" ColumnName="CustomerStateProvince" />
+          <ScalarProperty Name="CustomerPostalCode" ColumnName="CustomerPostalCode" />
+          <ScalarProperty Name="CustomerCountryId" ColumnName="CustomerCountryId" />
+          <ScalarProperty Name="CustomerEmail" ColumnName="CustomerEmail" />
+          <ScalarProperty Name="CustomerTelephoneNumber" ColumnName="CustomerTelephoneNumber" />
+          <ScalarProperty Name="CustomerMobileNumber" ColumnName="CustomerMobileNumber" />
+          <ScalarProperty Name="SecondCustomerId" ColumnName="SecondCustomerId" />
+          <ScalarProperty Name="SecondCustomerForeName" ColumnName="SecondCustomerForeName" />
+          <ScalarProperty Name="SecondCustomerSurName" ColumnName="SecondCustomerSurName" />
+          <ScalarProperty Name="SecondCustomerDob" ColumnName="SecondCustomerDob" />
+          <ScalarProperty Name="SecondCustomerAddress" ColumnName="SecondCustomerAddress" />
+          <ScalarProperty Name="SecondCustomerCity" ColumnName="SecondCustomerCity" />
+          <ScalarProperty Name="SecondCustomerStateProvince" ColumnName="SecondCustomerStateProvince" />
+          <ScalarProperty Name="SecondCustomerPostalCode" ColumnName="SecondCustomerPostalCode" />
+          <ScalarProperty Name="SecondCustomerCountryId" ColumnName="SecondCustomerCountryId" />
+          <ScalarProperty Name="SecondCustomerEmail" ColumnName="SecondCustomerEmail" />
+          <ScalarProperty Name="SecondCustomerTelephoneNumber" ColumnName="SecondCustomerTelephoneNumber" />
+          <ScalarProperty Name="SecondCustomerMobileNumber" ColumnName="SecondCustomerMobileNumber" />
+          <ScalarProperty Name="ProductEventId" ColumnName="ProductEventId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

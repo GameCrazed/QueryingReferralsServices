@@ -1,0 +1,12 @@
+﻿1] Before any publish and in case you updated your entity models, do the following:
+
+a] Search for public partial class LegalEntities : DbContext
+b] make sure that the class contains the line: Configuration.ProxyCreationEnabled = false;
+c] do the same for the rest of your contexts.
+
+Example:
+public LegalEntities()
+            : base("name=LegalEntities")
+        {
+            Configuration.ProxyCreationEnabled = false;
+        }

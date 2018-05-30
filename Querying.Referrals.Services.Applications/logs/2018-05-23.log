@@ -1,0 +1,3 @@
+2018-05-23 11:32:38.7295 ERROR Method: Querying.Referrals.Services.Applications.Services.AppRepositoryServices.ReferralsService/LegalRepositoryService/GetReferredInOutCustomersByAsCustomerIdToList: Delegate to an instance method cannot have null 'this'.
+2018-05-23 14:07:38.4941 ERROR Method: Querying.Referrals.Services.Applications.Services.AppRepositoryServices.ReferralsService/ReferralRepositoryService/GetReferralsByApCustomerIdToList: Object reference not set to an instance of an object.
+2018-05-23 14:08:02.4203 ERROR Method: Querying.Referrals.Services.Applications.Services.AppRepositoryServices.ReferralsService/ReferralRepositoryService/GetReferralsByApCustomerIdToList: Object reference not set to an instance of an object.

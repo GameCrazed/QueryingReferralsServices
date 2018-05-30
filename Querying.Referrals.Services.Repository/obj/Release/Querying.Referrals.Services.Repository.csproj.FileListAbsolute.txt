@@ -1,0 +1,15 @@
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Repository\bin\Release\Querying.Referrals.Services.Repository.dll.config
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Repository\bin\Release\Querying.Referrals.Services.Repository.dll
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Repository\bin\Release\Querying.Referrals.Services.Repository.pdb
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Repository\bin\Release\EntityFramework.dll
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Repository\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Repository\bin\Release\Querying.Referrals.Services.Data.dll
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Repository\bin\Release\Querying.Referrals.Services.Data.pdb
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Repository\bin\Release\Querying.Referrals.Services.Data.dll.config
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Repository\bin\Release\EntityFramework.xml
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Repository\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Repository\obj\Release\Querying.Referrals.Services.Repository.csprojResolveAssemblyReference.cache
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Repository\obj\Release\Querying.Referrals.Services.Repository.csproj.CoreCompileInputs.cache
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Repository\obj\Release\Querying.Referrals.Services.Repository.csproj.CopyComplete
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Repository\obj\Release\Querying.Referrals.Services.Repository.dll
+C:\Users\ceidson\Source\Repos\AgePartnership\QueryingReferralsServices\Querying.Referrals.Services.Repository\obj\Release\Querying.Referrals.Services.Repository.pdb

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="LegalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="customerHistory">
+          <Key>
+            <PropertyRef Name="logID" />
+          </Key>
+          <Property Name="logID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="customerID" Type="int" Nullable="false" />
+          <Property Name="logText" Type="text" />
+          <Property Name="logLevel" Type="int" />
+          <Property Name="loggedBy" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="logtime" Type="datetime" Nullable="false" />
+          <Property Name="important" Type="bit" Nullable="false" />
+          <Property Name="PlanningAheadTypeId" Type="tinyint" />
+        </EntityType>
+        <EntityType Name="ReferredInOutCustomers">
+          <Key>
+            <PropertyRef Name="ReferredInOutId" />
+          </Key>
+          <Property Name="ReferredInOutId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CustomerId" Type="int" Nullable="false" />
+          <Property Name="ReferralId" Type="int" Nullable="false" />
+          <Property Name="ProductId" Type="int" Nullable="false" />
+          <Property Name="InOut" Type="bit" Nullable="false" />
+          <Property Name="SecondCustomerId" Type="int" />
+        </EntityType>
+        <EntityContainer Name="LegalModelStoreContainer">
+          <EntitySet Name="customerHistory" EntityType="Self.customerHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ReferredInOutCustomers" EntityType="Self.ReferredInOutCustomers" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LegalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="LegalReferredInOutCustomer">
+          <Key>
+            <PropertyRef Name="ReferredInOutId" />
+          </Key>
+          <Property Name="ReferredInOutId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerId" Type="Int32" Nullable="false" />
+          <Property Name="ReferralId" Type="Int32" Nullable="false" />
+          <Property Name="ProductId" Type="Int32" Nullable="false" />
+          <Property Name="InOut" Type="Boolean" Nullable="false" />
+          <Property Name="SecondCustomerId" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="LegalEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="LegalReferredInOutCustomers" EntityType="LegalModel.LegalReferredInOutCustomer" />
+          <EntitySet Name="LegalCustomerHistories" EntityType="LegalModel.LegalCustomerHistory" />
+        </EntityContainer>
+        <EntityType Name="LegalCustomerHistory">
+          <Key>
+            <PropertyRef Name="logID" />
+          </Key>
+          <Property Name="logID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="customerID" Type="Int32" Nullable="false" />
+          <Property Name="logText" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="logLevel" Type="Int32" />
+          <Property Name="loggedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="logtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="important" Type="Boolean" Nullable="false" />
+          <Property Name="PlanningAheadTypeId" Type="Byte" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LegalModelStoreContainer" CdmEntityContainer="LegalEntities">
+          <EntitySetMapping Name="LegalReferredInOutCustomers">
+            <EntityTypeMapping TypeName="LegalModel.LegalReferredInOutCustomer">
+              <MappingFragment StoreEntitySet="ReferredInOutCustomers">
+                <ScalarProperty Name="ReferredInOutId" ColumnName="ReferredInOutId" />
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="ReferralId" ColumnName="ReferralId" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="InOut" ColumnName="InOut" />
+                <ScalarProperty Name="SecondCustomerId" ColumnName="SecondCustomerId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LegalCustomerHistories">
+            <EntityTypeMapping TypeName="LegalModel.LegalCustomerHistory">
+              <MappingFragment StoreEntitySet="customerHistory">
+                <ScalarProperty Name="PlanningAheadTypeId" ColumnName="PlanningAheadTypeId" />
+                <ScalarProperty Name="important" ColumnName="important" />
+                <ScalarProperty Name="logtime" ColumnName="logtime" />
+                <ScalarProperty Name="loggedBy" ColumnName="loggedBy" />
+                <ScalarProperty Name="logLevel" ColumnName="logLevel" />
+                <ScalarProperty Name="logText" ColumnName="logText" />
+                <ScalarProperty Name="customerID" ColumnName="customerID" />
+                <ScalarProperty Name="logID" ColumnName="logID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

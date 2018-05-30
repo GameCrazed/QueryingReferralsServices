@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ReferralsServiceModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Referrals">
+          <Key>
+            <PropertyRef Name="ReferralId" />
+          </Key>
+          <Property Name="ReferralId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProductId" Type="int" Nullable="false" />
+          <Property Name="SourceCompanyId" Type="int" />
+          <Property Name="CustomerId" Type="int" />
+          <Property Name="CustomerForeName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="CustomerSurName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="CustomerDob" Type="datetime" />
+          <Property Name="CustomerAddress" Type="nvarchar" MaxLength="250" />
+          <Property Name="CustomerCity" Type="nvarchar" MaxLength="100" />
+          <Property Name="CustomerStateProvince" Type="nvarchar" MaxLength="100" />
+          <Property Name="CustomerPostalCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="CustomerCountryId" Type="int" />
+          <Property Name="CustomerEmail" Type="nvarchar" MaxLength="254" />
+          <Property Name="CustomerTelephoneNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="CustomerMobileNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="SecondCustomerId" Type="int" />
+          <Property Name="SecondCustomerForeName" Type="nvarchar" MaxLength="200" />
+          <Property Name="SecondCustomerSurName" Type="nvarchar" MaxLength="200" />
+          <Property Name="SecondCustomerDob" Type="datetime" />
+          <Property Name="SecondCustomerAddress" Type="nvarchar" MaxLength="250" />
+          <Property Name="SecondCustomerCity" Type="nvarchar" MaxLength="100" />
+          <Property Name="SecondCustomerStateProvince" Type="nvarchar" MaxLength="100" />
+          <Property Name="SecondCustomerPostalCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="SecondCustomerCountryId" Type="int" />
+          <Property Name="SecondCustomerEmail" Type="nvarchar" MaxLength="254" />
+          <Property Name="SecondCustomerTelephoneNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="SecondCustomerMobileNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="ProductEventId" Type="int" />
+        </EntityType>
+        <EntityContainer Name="ReferralsServiceModelStoreContainer">
+          <EntitySet Name="Referrals" EntityType="Self.Referrals" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ReferralsServiceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Referral">
+          <Key>
+            <PropertyRef Name="ReferralId" />
+          </Key>
+          <Property Name="ReferralId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductId" Type="Int32" Nullable="false" />
+          <Property Name="SourceCompanyId" Type="Int32" />
+          <Property Name="CustomerId" Type="Int32" />
+          <Property Name="CustomerForeName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CustomerSurName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CustomerDob" Type="DateTime" Precision="3" />
+          <Property Name="CustomerAddress" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="CustomerCity" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CustomerStateProvince" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CustomerPostalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CustomerCountryId" Type="Int32" />
+          <Property Name="CustomerEmail" Type="String" MaxLength="254" FixedLength="false" Unicode="true" />
+          <Property Name="CustomerTelephoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CustomerMobileNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SecondCustomerId" Type="Int32" />
+          <Property Name="SecondCustomerForeName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SecondCustomerSurName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SecondCustomerDob" Type="DateTime" Precision="3" />
+          <Property Name="SecondCustomerAddress" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="SecondCustomerCity" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SecondCustomerStateProvince" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SecondCustomerPostalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SecondCustomerCountryId" Type="Int32" />
+          <Property Name="SecondCustomerEmail" Type="String" MaxLength="254" FixedLength="false" Unicode="true" />
+          <Property Name="SecondCustomerTelephoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SecondCustomerMobileNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ProductEventId" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="ReferralsServiceEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Referrals" EntityType="Self.Referral" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ReferralsServiceModelStoreContainer" CdmEntityContainer="ReferralsServiceEntities">
+          <EntitySetMapping Name="Referrals">
+            <EntityTypeMapping TypeName="ReferralsServiceModel.Referral">
+              <MappingFragment StoreEntitySet="Referrals">
+                <ScalarProperty Name="ReferralId" ColumnName="ReferralId" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="SourceCompanyId" ColumnName="SourceCompanyId" />
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="CustomerForeName" ColumnName="CustomerForeName" />
+                <ScalarProperty Name="CustomerSurName" ColumnName="CustomerSurName" />
+                <ScalarProperty Name="CustomerDob" ColumnName="CustomerDob" />
+                <ScalarProperty Name="CustomerAddress" ColumnName="CustomerAddress" />
+                <ScalarProperty Name="CustomerCity" ColumnName="CustomerCity" />
+                <ScalarProperty Name="CustomerStateProvince" ColumnName="CustomerStateProvince" />
+                <ScalarProperty Name="CustomerPostalCode" ColumnName="CustomerPostalCode" />
+                <ScalarProperty Name="CustomerCountryId" ColumnName="CustomerCountryId" />
+                <ScalarProperty Name="CustomerEmail" ColumnName="CustomerEmail" />
+                <ScalarProperty Name="CustomerTelephoneNumber" ColumnName="CustomerTelephoneNumber" />
+                <ScalarProperty Name="CustomerMobileNumber" ColumnName="CustomerMobileNumber" />
+                <ScalarProperty Name="SecondCustomerId" ColumnName="SecondCustomerId" />
+                <ScalarProperty Name="SecondCustomerForeName" ColumnName="SecondCustomerForeName" />
+                <ScalarProperty Name="SecondCustomerSurName" ColumnName="SecondCustomerSurName" />
+                <ScalarProperty Name="SecondCustomerDob" ColumnName="SecondCustomerDob" />
+                <ScalarProperty Name="SecondCustomerAddress" ColumnName="SecondCustomerAddress" />
+                <ScalarProperty Name="SecondCustomerCity" ColumnName="SecondCustomerCity" />
+                <ScalarProperty Name="SecondCustomerStateProvince" ColumnName="SecondCustomerStateProvince" />
+                <ScalarProperty Name="SecondCustomerPostalCode" ColumnName="SecondCustomerPostalCode" />
+                <ScalarProperty Name="SecondCustomerCountryId" ColumnName="SecondCustomerCountryId" />
+                <ScalarProperty Name="SecondCustomerEmail" ColumnName="SecondCustomerEmail" />
+                <ScalarProperty Name="SecondCustomerTelephoneNumber" ColumnName="SecondCustomerTelephoneNumber" />
+                <ScalarProperty Name="SecondCustomerMobileNumber" ColumnName="SecondCustomerMobileNumber" />
+                <ScalarProperty Name="ProductEventId" ColumnName="ProductEventId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
